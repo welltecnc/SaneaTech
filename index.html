@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+    <title>SaneaTech</title>
+</head>
+<body>
+
+<!-- CABEÇALHO -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-icon-bg">
+          <i class="fa-solid fa-droplet"></i>
+        </div>
+        <span>SaneaTech</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#" class="active">Início</a>
+        <a href="#acompanhar">Sobre</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#painel">Acompanhar</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="#" class="btn-ocorrencia">Registrar Ocorrência</a>
+        <div class="user-avatar">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEÇÃO HERO (INÍCIO) -->
+  <main>
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>SaneaTech</h1>
+          <h2>Tecnologia que transforma o saneamento.</h2>
+          <p>Conectando pessoas, dados e soluções<br>por cidades mais saudáveis e sustentáveis.</p>
+          
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-green">Registrar Ocorrência <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="btn btn-outline">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARDS DE BENEFÍCIOS FLUTUANTES -->
+      <div class="features-wrapper">
+        <div class="features-container">
+          <div class="feature-card">
+            <div class="f-icon"><i class="fa-solid fa-users"></i></div>
+            <span>Comunidade mais engajada</span>
+          </div>
+          <div class="feature-card">
+            <div class="f-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <span>Cidades mais seguras</span>
+          </div>
+          <div class="feature-card">
+            <div class="f-icon"><i class="fa-solid fa-seedling"></i></div>
+            <span>Meio ambiente preservado</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: ACOMPANHE SUA SOLICITAÇÃO -->
+    <section id="acompanhar" class="content-section">
+      <div class="container grid-2">
+        <!-- Card Esquerdo: Busca -->
+        <div class="dashboard-box">
+          <div class="box-header-icon blue-check">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h3>Acompanhe sua Solicitação</h3>
+          <p>Digite o número da sua ocorrência para verificar o andamento.</p>
+          <div class="search-input-group">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Ex: #12345" value="#12345">
+          </div>
+          <button class="btn-consultar">Consultar</button>
+        </div>
+
+        <!-- Card Direito: Status da Ocorrência -->
+        <div class="dashboard-box">
+          <h4>Status da sua ocorrência</h4>
+          <div class="timeline">
+            <div class="step completed">
+              <div class="step-icon"><i class="fa-solid fa-check"></i></div>
+              <span>Registrada</span>
+            </div>
+            <div class="step completed">
+              <div class="step-icon"><i class="fa-solid fa-check"></i></div>
+              <span>Em análise</span>
+            </div>
+            <div class="step active">
+              <div class="step-icon"><i class="fa-solid fa-rotate"></i></div>
+              <span>Em andamento</span>
+            </div>
+            <div class="step">
+              <div class="step-icon"></div>
+              <span>Concluída</span>
+            </div>
+          </div>
+          <div class="previsao-box">
+            <i class="fa-regular fa-calendar"></i>
+            <div>
+              <small>Previsão de resolução:</small>
+              <strong>18/11/2026</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: MAPA DE OCORRÊNCIAS -->
+    <section id="mapa" class="content-section">
+      <div class="container">
+        <div class="dashboard-box full-box">
+          <div class="map-title-area">
+            <div class="box-header-icon blue-pin">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <h3>Mapa de Ocorrências</h3>
+              <p>Confira as regiões com mais registros de problemas.</p>
+            </div>
+          </div>
+          <div class="map-mockup">
+            <!-- Simulação visual do mapa -->
+            <div class="map-pin red" style="top: 35%; left: 30%;"></div>
+            <div class="map-pin orange" style="top: 50%; left: 45%;"></div>
+            <div class="map-pin green" style="top: 70%; left: 65%;"></div>
+            <div class="map-pin red" style="top: 25%; left: 70%;"></div>
+            <div class="map-pin orange" style="top: 55%; left: 20%;"></div>
+          </div>
+          <div class="map-legend">
+            <span><span class="dot red-dot"></span> Alta Prioridade</span>
+            <span><span class="dot orange-dot"></span> Em Andamento</span>
+            <span><span class="dot green-dot"></span> Resolvido</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: PAINEL ADMINISTRATIVO -->
+    <section id="painel" class="content-section">
+      <div class="container">
+        <div class="dashboard-box full-box">
+          <div class="admin-top">
+            <div class="admin-title-left">
+              <i class="fa-solid fa-chart-pie admin-main-icon"></i>
+              <div>
+                <h3>Painel Administrativo</h3>
+                <p>Visão geral das ocorrências</p>
+              </div>
+            </div>
+            <i class="fa-solid fa-bars menu-icon"></i>
+          </div>
+
+          <!-- Métricas (3 Cards superiores) -->
+          <div class="admin-metrics-grid">
+            <div class="metric-card card-blue">
+              <div class="metric-info">
+                <strong>124</strong>
+                <span>Total de ocorrências</span>
+              </div>
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="metric-card card-green">
+              <div class="metric-info">
+                <strong>78</strong>
+                <span>Resolvidas</span>
+              </div>
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="metric-card card-orange">
+              <div class="metric-info">
+                <strong>46</strong>
+                <span>Em andamento</span>
+              </div>
+              <i class="fa-regular fa-clock"></i>
+            </div>
+          </div>
+
+          <!-- Gráficos inferiores -->
+          <div class="admin-charts-grid">
+            <div class="chart-box">
+              <h4>Tipos de Problema</h4>
+              <div class="chart-content-flex">
+                <div class="donut-chart-mock"></div>
+                <div class="chart-legend">
+                  <p><span class="dot blue-dot"></span> Esgoto a céu aberto <strong>60%</strong></p>
+                  <p><span class="dot orange-dot"></span> Vazamento <strong>25%</strong></p>
+                  <p><span class="dot green-dot"></span> Outros <strong>15%</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="chart-box">
+              <h4>Regiões com mais registros</h4>
+              <div class="bars-chart-mock">
+                <div class="bar" style="height: 90%;"></div>
+                <div class="bar" style="height: 75%;"></div>
+                <div class="bar" style="height: 60%;"></div>
+                <div class="bar" style="height: 65%;"></div>
+                <div class="bar" style="height: 45%;"></div>
+                <div class="bar" style="height: 35%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer-bar">
+    <div class="footer-content">
+      <div class="logo footer-logo">
+        <div class="logo-icon-bg white-bg">
+          <i class="fa-solid fa-droplet"></i>
+        </div>
+        <span>SaneaTech</span>
+      </div>
+      <div class="footer-separator"></div>
+      <p>Tecnologia que transforma o saneamento. &copy;-2026</p>
+    </div>
+  </footer>
+
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
